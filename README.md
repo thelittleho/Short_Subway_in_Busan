@@ -9,7 +9,7 @@
 |부산 지하철 간 거리 조사|❌|
 |구현                   |❌|
 
-[REFERENCE1 : Dijkstra Algorithm](https://m.blog.naver.com/ndb796/221234424646)
+[[REFERENCE1] : Dijkstra Algorithm](https://m.blog.naver.com/ndb796/221234424646)
 #
 
 ### 부산 지하철 간 거리 조사
