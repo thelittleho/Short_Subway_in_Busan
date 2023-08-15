@@ -1,3 +1,5 @@
+<img width="100%" src="https://i.pinimg.com/originals/62/33/2d/62332d52843de1fb48d463735a91ffda.gif"/>
+
 # MINI PROHECT : Busan subway shortest distance in Dijkstra Algorithm
 ### This program is a mini-project that will be created using the Dijkstra Algorithm and C language. And the reason why I made this program was that I wanted to make a small project through a discrete algorithm that I learned at university to study alone, and among them, I was most impressed by the Dijkstra algorithm, I am planning to make the shortest route of Busan subway.
 
