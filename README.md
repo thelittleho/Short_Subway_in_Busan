@@ -3,8 +3,10 @@
 # MINI PROJECT : Busan subway shortest distance in Dijkstra Algorithm
 ### This program is a mini-project that will be created using the Dijkstra Algorithm and C language. And the reason why I made this program was that I wanted to make a small project through a discrete algorithm that I learned at university to study alone, and among them, I was most impressed by the Dijkstra algorithm, I am planning to make the shortest route of Busan subway.
 
+<br>
 
-
+## Checklist
+***
 |체크리스트|확인|
 |---------|----|
 |디악스트라 알고리즘 공부|❌|
@@ -12,9 +14,11 @@
 |구현                   |❌|
 
 [[REFERENCE1] : Dijkstra Algorithm](https://m.blog.naver.com/ndb796/221234424646)
-#
 
-### 부산 지하철 간 거리 조사
+<br>
+
+## A Survey of the Distance Between Subway in Busan
+***
      1호선 (노포동~다대포해수욕장 41.4km)
 
 **노포** <-- 1.2km --> **범어사** <-- 0.9km --> **남산** <-- 1.0km --> **두실** <-- 1.0km --> **구서** <-- 1.1km --> **장전** <-- 1.0km --> **부산대** <-- 1.1km --> **온천장** <-- 1.0km --> **명륜** <-- 0.8km --> **동래** <-- 1.2km --> **교대** <-- 1.0km --> **연산** <-- 0.9km --> **시청** <-- 0.8km --> **양정** <-- 1.4km --> **부전** <-- 0.6km --> **서면** <-- 1.2km --> **범내골** <-- 0.8km --> **범일** <-- 0.8km --> **좌천** <-- 0.9km --> **부산진** <-- 0.8km --> **초량** <-- 0.8km --> **부산역** <-- 1.1km --> **중앙** <-- 0.9km --> **남포** <-- 0.7km --> **자갈치** <-- 1.0km --> **토성** <-- 1.2km --> **동대신** <-- 0.7km --> **서대신** <-- 1.4km --> **대티** <-- 0.8km --> **괴정** 
@@ -74,7 +78,7 @@
 #
 
     부산김해선 (사상~가야대 22.6km)
-  **사상** **괴법르네시뗴** **서부산유통지구** **공항** ***덕두** **등구** **대저** **평강** ***대사** **불암** **지내** **김해대학** **인제대** **김해시청** **부원** **봉황** **수로왕릉** **박물관** **연지공원** ***장신대** **가야대**
+  **사상** **괴법르네시떼** **서부산유통지구** **공항** **덕두** **등구** **대저** **평강** **대사** **불암** **지내** **김해대학** **인제대** **김해시청** **부원** **봉황** **수로왕릉** **박물관** **연지공원** ***장신대** **가야대**
   
     동해선 광역철도 (부전~태화강 63.8km)
 **부전** **거제해맞이** **거제** **교대** **동래** **안락** **부산원동** **재송** **센텀** **벡스코** **신해운대** **송정** **오시리아** **기장** **일광** **좌천** **월내** **서생** **남창** **망양** **덕하** **개운포** **태화강**
