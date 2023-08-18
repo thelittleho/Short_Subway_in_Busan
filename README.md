@@ -3,17 +3,16 @@
 # MINI PROJECT : Busan subway shortest distance in Dijkstra Algorithm
 ### This program is a mini-project that will be created using the Dijkstra Algorithm and C language.  
 
-### And the reason why I made this program was that I wanted to make a small project through a discrete algorithm that I learned at university to study alone, and among them, I was most impressed by the Dijkstra algorithm, I am planning to make the shortest route of Busan subway.
-
-<br>
+### And the reason why I made this program was that I wanted to make a small project through a discrete algorithm that I learned at university to study alone, and among them, I was most impressed by the Dijkstra algorithm, I am planning to make the shortest route of Busan subway.  
 
 ## Checklist
-***
 |Checklist|Check|
 |---------|----|
 |**A study of Dijkstra Algorithm**|❌|
 |**A Survey of the Distance Between Subway in Busan**|✅|
 |**realization**|❌|
+***
+
 
 <br>
 
@@ -28,7 +27,7 @@
 <br>
 
 ## A Survey of the Distance Between Subway in Busan
-***
+
      1호선 (노포동~다대포해수욕장 41.4km)
 
 **노포** <-- 1.2km --> **범어사** <-- 0.9km --> **남산** <-- 1.0km --> **두실** <-- 1.0km --> **구서** <-- 1.1km --> **장전** <-- 1.0km --> **부산대** <-- 1.1km --> **온천장** <-- 1.0km --> **명륜** <-- 0.8km --> **동래** <-- 1.2km --> **교대** <-- 1.0km --> **연산** <-- 0.9km --> **시청** <-- 0.8km --> **양정** <-- 1.4km --> **부전** <-- 0.6km --> **서면** <-- 1.2km --> **범내골** <-- 0.8km --> **범일** <-- 0.8km --> **좌천** <-- 0.9km --> **부산진** <-- 0.8km --> **초량** <-- 0.8km --> **부산역** <-- 1.1km --> **중앙** <-- 0.9km --> **남포** <-- 0.7km --> **자갈치** <-- 1.0km --> **토성** <-- 1.2km --> **동대신** <-- 0.7km --> **서대신** <-- 1.4km --> **대티** <-- 0.8km --> **괴정** <--0.9km --> **사하** <-- 0.9km --> **당리** <-- 0.8km --> **하단** <-- 1.6km --> **신평** <-- 1.6km -->**동매** <-- 1.5km --> **장림** <-- 1.1km --> **신장림** <-- 1.8km --> **낫개** <-- 1.3km --> **다대포항** <-- 1.6km -> **다대포해수욕장**
@@ -66,6 +65,7 @@
 - 미남역(부산 3호선, 부산 4호선)
 - 거제역(부산 3호선, 동해선 광역철도)
 #
+***  
 
 ## realization
 *** 
