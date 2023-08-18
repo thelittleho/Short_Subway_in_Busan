@@ -17,7 +17,7 @@
 
 <br>
 
-[[REFERENCE1] : Dijkstra Algorithm](https://m.blog.naver.com/ndb796/221234424646)
+[[REFERENCE1] : Dijkstra Algorithm](https://velog.io/@717lumos/알고리즘-다익스트라Dijkstra-알고리즘)
 
 <br>
 
