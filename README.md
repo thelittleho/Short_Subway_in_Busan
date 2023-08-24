@@ -27,7 +27,7 @@
 <br>
 
 ## A Survey of the Distance Between Subway in Busan
-![image](https://github.com/FreshSider04/Short_Subway_in_Busan/assets/120298512/ac2e1b91-62cb-4e19-9ad0-1f279355eb6d)  
+![image](https://github.com/FreshSider04/Short_Subway_in_Busan/assets/120298512/985a0e08-85e8-4cef-984e-d7c10fec42e2
 
 
      1호선 (노포동~다대포해수욕장 41.4km)
