@@ -2,26 +2,44 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include "Station.h"
-#include "Dijkstra.h"
 
-char* vertexToStationName(int _vertexIndex);
-typedef struct _tagRoutePair
+
+// 기본 구조
+// 경로의 정보를 저장
+typedef struct Route_info_S
 {
-	int ParentV;
-	int ChildV;
-} ROUTEPAIR;
+	// 부모 정점(parent vertex)
+	int parent_vertex;
+	// 자식 정점(child vertex)
+	int child_vertex;
+} ROUTES;
+
+// Dijkstra 알고리즘 함수
+void Dijkstra();
+// 인덱스를 받아 해당하는 역의 이름을 반환하는 함수
+char* EnumToStationname();
+
+// 노포 ~ ?까지의 역 정보 출력
+int main(void)
+{
+	Dijkstra(노포, 사상);
+	return 0;
+}
 
 void Dijkstra(int _startV, int _endV)
 {
-	bool visited[VERTEX_COUNT] = { 0 };
+	// 정점 방문 테이블 False으로 설정
+	bool visited_vertex[VERTEX_COUNT] = { 0 };
 	int distance[VERTEX_COUNT];
-	ROUTEPAIR routePairs[VERTEX_COUNT] = { 0 };
+	ROUTES routes[VERTEX_COUNT] = { 0 };
 
+	// 초기 거리(distance)를 0로 설정한다
 	for (int i = 0; i < VERTEX_COUNT; i++)
 	{
 		distance[i] = INF;
 	}
 
+	// 시작 정점에서 다른 정점으로의 초기 거리를 배열에 설정
 	for (int i = 0; i < VERTEX_COUNT; i++)
 	{
 		if (station_weight[_startV][i] != INF) 
@@ -29,19 +47,24 @@ void Dijkstra(int _startV, int _endV)
 			distance[i] = station_weight[_startV][i];
 		}
 	}
+	// 시작 정점을 방문한 것으로 표시
+	visited_vertex[_startV] = true;
+	// 시작 정점을 부모 정점으로 설정
+	routes[_startV].parent_vertex = _startV;
 
-	visited[_startV] = true;
-	routePairs[_startV].ParentV = _startV;
-
+	// 현재 정점 == 시작 정점
 	int currentV = _startV;
+	// 모든 정점 방문
 	for (int i = 0; i < VERTEX_COUNT - 1; i++)
 	{
 		int min = INF;
 		int minIndex = currentV;
 
+		// 최단 거리를 갱신하는 과정을 수행
 		for (int i = 0; i < VERTEX_COUNT; i++)
 		{
-			if(!visited[i])
+			// visited_vertex가 False인 경우
+			if(!visited_vertex[i])
 			{
 				if (min > distance[i])
 				{
@@ -52,57 +75,66 @@ void Dijkstra(int _startV, int _endV)
 		}
 
 		currentV = minIndex;
-		visited[currentV] = true;
+		visited_vertex[currentV] = true;
 
 		for (int i = 0; i < VERTEX_COUNT; i++)
 		{
-			if (!visited[i])
+			if (!visited_vertex[i])
 			{
 				if (distance[currentV] + station_weight[currentV][i] < distance[i])
 				{
-					routePairs[currentV].ChildV = i;
-					routePairs[i].ParentV = currentV;
-
+					// 현재 정점에서 다음 정점으로 가는 경로
+					routes[currentV].child_vertex = i;
+					// 정점의 부모 정점
+					routes[i].parent_vertex = currentV;
+					// 현재까지의 최단 거리를 업데이트
 					distance[i] = distance[currentV] + station_weight[currentV][i];
 				}
 			}
 		}
 	}
 
+	// 경로를 저장하기 위한 배열
 	int routeStack[VERTEX_COUNT] = { 0 };
+	// 경로 스택에 저장된 정점의 개수
 	int RoutesCount = 0;
+	// 경로 스택에 도착 정점 _endV를 추가하고 RoutesCount를 증가시키는 과정
 	routeStack[RoutesCount++] = _endV;
 	int now = _endV;
 
 	while (1)
 	{
-		if (routePairs[now].ParentV == _startV)
+		// 부모 정점과 시작정점이 같다. == 종료
+		if (routes[now].parent_vertex == _startV)
 		{
 			routeStack[RoutesCount++] = _startV;
 			break;
 		}
-		now = routePairs[now].ParentV;
+		//  현재 정점을 부모 정점으로 업데이트하고 경로 스택에 추가
+		now = routes[now].parent_vertex;
 		routeStack[RoutesCount++] = now;
 	}
 
+	// 역 정보 출력
+	// 경로는 routeStack 배열에 역순으로 저장
 	for (int i = RoutesCount - 1; i >= 0; i--)
 	{
 		if (i == RoutesCount - 1)
 		{
-			printf("|%s| → ", vertexToStationName(routeStack[i]));
+			printf("|%s| → ", EnumToStationname(routeStack[i]));
 		}
 		else if (i == 0)
 		{
-			printf("|%s|", vertexToStationName(routeStack[i]));
+			printf("|%s|", EnumToStationname(routeStack[i]));
 		}
 		else
 		{
-			printf("|%s| → ", vertexToStationName(routeStack[i]));
+			printf("|%s| → ", EnumToStationname(routeStack[i]));
 		}
 	}
 }
 
-char* vertexToStationName(int _vertexIndex)
+char* EnumToStationname(int _vertexIndex)
 {
 	enum station s = _vertexIndex;
 	switch (s)
@@ -191,12 +223,4 @@ char* vertexToStationName(int _vertexIndex)
 		return "존재하는 역이 없습니다.";
 	}
 }
-int main(void)
-{
-	Dijkstra(부산대, 노포);
-	printf("\n");
-	printf("평균 속도 = %lf", station_weight[23][24]);
-	return 0;
-}
-
 

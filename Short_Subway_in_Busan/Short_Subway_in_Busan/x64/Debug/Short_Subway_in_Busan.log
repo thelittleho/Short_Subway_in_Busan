@@ -1,15 +1,10 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(Dijkstra Algorithm.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
   main.c
 C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Station.h(60,2): warning C4091: 'extern ': 변수를 선언하지 않으면 'station' 왼쪽은 무시됩니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(17,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(24,41): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(61,39): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(87,24): warning C4013: 'vertexToStationName'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(87,11): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(87,11): warning C4313: 'printf': 서식 문자열의 '%s'이(가) int' 형식의 인수 1과(와) 충돌합니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(91,11): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(91,11): warning C4313: 'printf': 서식 문자열의 '%s'이(가) int' 형식의 인수 1과(와) 충돌합니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(95,11): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(95,11): warning C4313: 'printf': 서식 문자열의 '%s'이(가) int' 형식의 인수 1과(와) 충돌합니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\Dijkstra.h(34,13): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\main.c(8,7): error C2040: 'vertexToStationName': 'char *(int)'의 간접 참조 수준이 'int ()'과(와) 다릅니다.
+  (소스 파일 'main.c'을(를) 컴파일하는 중)
+  
+C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\main.c(37,17): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\main.c(44,41): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\main.c(81,39): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\Short_Subway_in_Busan\main.c(54,13): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Short_Subway_in_Busan.vcxproj -> C:\Users\FreshSider\Documents\GitHub\Short_Subway_in_Busan\Short_Subway_in_Busan\x64\Debug\Short_Subway_in_Busan.exe
